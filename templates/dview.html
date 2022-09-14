@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <style>
+            
+        </style>
+        </head>
+        <body>
+            {% include 'nav.html' %} 
+
+           <img src="{{x.image.url}}" alt="" style="height:350px;width:550px;">
+           <h3>{{x.name}}</h3>
+           <p>{{x.dis}}</p>
+           <br><br>
+           <a href="{% url 'preview' x.id %}"><button>Edit</button></a>
+           <a href="{% url 'delview' x.id %}">  <button>Delete</button></a>
+            </body>
+</html>

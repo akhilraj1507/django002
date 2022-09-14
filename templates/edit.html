@@ -1,0 +1,8 @@
+{% include 'nav.html' %} 
+<form method="post">
+    {% csrf_token %}
+    {{e.as_p}}
+    
+
+<input type="submit" value="Apply Edit">
+</form>

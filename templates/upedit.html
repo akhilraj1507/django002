@@ -1,0 +1,14 @@
+<html>
+    <head></head>
+    <style></style>
+    <body>
+        {% include 'nav.html' %} 
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <br><br>
+            {{e.as_p}}
+            {{im.as_p}}
+            <button type="submit">Add</button>
+        </form>
+    </body>
+</html>
